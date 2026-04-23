@@ -2,7 +2,23 @@
 # 1. Jeu 2D développé via Godot
 
 Créé et développé par Jerry Cleuet
- - [1. Jeu 2D développé via Godot](#1-jeu-2d-développé-via-godot)
+- [1. Jeu 2D développé via Godot](#1-jeu-2d-développé-via-godot)
+- [2. Documentation de la mise en place et de l'apprentissage](#2-documentation-de-la-mise-en-place-et-de-lapprentissage)
+  - [2.1. Lancement du projet](#21-lancement-du-projet)
+  - [2.2. Apprentissage](#22-apprentissage)
+    - [2.2.1. Scènes](#221-scènes)
+    - [2.2.2. Assets](#222-assets)
+    - [2.2.3. Scripts](#223-scripts)
+    - [2.2.4. Signaux](#224-signaux)
+    - [2.2.5. Tilemap et Tileset](#225-tilemap-et-tileset)
+    - [2.2.6. Bonnes pratiques](#226-bonnes-pratiques)
+  - [2.3. Déroulement de mon projet](#23-déroulement-de-mon-projet)
+    - [2.3.1. Limites et fonctionnalités](#231-limites-et-fonctionnalités)
+      - [2.3.1.1. Fonctionnalités](#2311-fonctionnalités)
+      - [2.3.1.2. Limites](#2312-limites)
+      - [2.3.1.3. Cible](#2313-cible)
+  - [2.4. Difficultés rencontrées](#24-difficultés-rencontrées)
+
 
 # 2. Documentation de la mise en place et de l'apprentissage
 ## 2.1. Lancement du projet
@@ -14,31 +30,31 @@ Créé et développé par Jerry Cleuet
 
  Pour apprendre les bases des contrôles et des scripts, j'ai regardé [cette vidéo](https://www.youtube.com/watch?v=LOhfqjmasi0) en même temps que je reproduisais ce que je voyais. C'est ainsi que j'ai fait mes débuts en game dev sur Godot.
 
- ## Apprentissage
- ### Scènes
+ ## 2.2. Apprentissage
+ ### 2.2.1. Scènes
  ---
  Les scènes sont des arbres de nodes, des éléments que l'on va vouloir réutiliser dans notre jeu. On crée une scène par exemple pour le joueur, les ennemis, les pièces, les plateformes... Tout objet que l'on veut pouvoir réutiliser dans notre jeu doit être fait sous forme de scène.
 
  Quand on crée une scène, il y a un grand nombre de possibilités d'ajout pour créer l'élément souhaité : que ce soit en 2D ou en 3D on peut ajouter des hitbox, des sons, des animations, des caméras pour suivre un personnage, des timers, des rayons de détection... 
- ### Assets
+ ### 2.2.2. Assets
  ---
  Les assets sont les images que l'on va utiliser dans le jeu. Pour un jeu 2d, les assets peuvent être plus ou moins pixelisés selon le rendu que l'on veut donner. Dans mon cas, j'ai utilisé des assets de base libres de droit ; mais il m'est également arrivé de créer des assets originaux ! Pour faire cela, il m'a juste fallu un site pour faire du pixel art, un peu d'imagination et hop ! ça permet de créer facilement des sprites personnalisés adaptés au style du jeu.
- ### Scripts
+ ### 2.2.3. Scripts
  ---
  Les scripts comportent toute la partie logique du jeu. Bien que l'on puisse définir énormément de choses via l'interface graphique de Godot, on est tout de même obligé de passer par cette étape, plus ou moins réjouissante. Pour ma part, je préfère largement la création de niveaux et d'assets, qui utilisent l'imagination et la créativité, au codage de scripts qui est plus logique et compliqué au début.
 
  Dans les scripts, on définit des conditions, des boucles et des fonctions comme dans tout langage de programmation. Changements d'animations, réaction aux collisions, contrôles via souris/clavier... On peut à peu près tout gérer à partir des scripts.
- ### Signaux
+ ### 2.2.4. Signaux
  ---
  Sur Godot, les signaux font "partie" du code. Dans l'interface, on retrouve différents types de signaux que l'on peut utiliser dans le code : signaux de collision, de canvas, d'objet ou de node. En fait, ces signaux sont émis quand il y a un changement ; si la souris passe sur quelque chose, si on touche un ennemi... Ils servent à alléger la charge de code à produire. Un signal est un évènement, et on peut le connecter à une fonction pour y réagir.
 
- ### Tilemap et Tileset
+ ### 2.2.5. Tilemap et Tileset
  ---
  Tilemap et Tileset : deux choses presque nécessaires au bon développement du jeu, puisque ce sont ces deux éléments qui gèrent le rendu du background et des éléments visibles en premier plan. Pour les définir/utiliser, il faut un fichier comprenant les éléments que l'on veut utiliser pour l'interface de notre jeu, comme des blocs, des arbres, du terrain etc. Dans le tileset, on sélectionne sur le fichier (généralement un png) les éléments que l'on pourra ajouter au jeu avec le tilemap.
 
  Avec le tilemap, il est également possible de créer plusieurs plans séparés, par exemple : le premier plan qui serait la partie active du jeu, comprenant les collisions entre entité et blocs et le second plan qui serait juste le décor du jeu.
 
- ### Bonnes pratiques
+ ### 2.2.6. Bonnes pratiques
  ---
 Pour développer avec Godot, il y a des bons gestes à appliquer pour rendre le projet plus lisible et maintenable. 
 - Construire une arborescence cohérente entre scripts, scènes et assets
@@ -47,11 +63,11 @@ Pour développer avec Godot, il y a des bons gestes à appliquer pour rendre le 
 - Commenter un minimum le code implémenté dans les scripts
 - Rendre le code dans les scripts le plus réutilisable possible
 
-## Déroulement de mon projet
-### Limites et fonctionnalités
+## 2.3. Déroulement de mon projet
+### 2.3.1. Limites et fonctionnalités
 ---
 La première chose à faire avant de démarrer un projet de développement, c'est de définir les fonctionnalités à implémenter, les limites du projet et la cible du produit final.
-#### Fonctionnalités
+#### 2.3.1.1. Fonctionnalités
 ---
 Pour mon jeu, je veux au minimum implémenter les fonctionnalités suivantes :
 - On doit pouvoir contrôler le joueur pour se déplacer et sauter
@@ -81,17 +97,17 @@ Une fois terminées, je pourrai me concentrer sur les fonctionnalités suivantes
 - Il doit y avoir un background sur plusieurs plans, assez réfléchi et joli
 - Il doit y avoir des villages interactifs dans le background avec des maisons à visiter
 - Il doit y avoir des énigmes pour progresser utilisant la mécanique des pnjs et des maisons/villages
-#### Limites
+#### 2.3.1.2. Limites
 ---
 Mon jeu n'est pas prévu pour un grand public mais plus comme projet d'apprentissage, les limites seront donc vite atteintes : pas besoin de 3D, d'assets monstrueux ou de mécaniques compliquées.
 - Pas de physique réaliste poussée
 - Pas d'IA complexe dans le jeu
 - Pas de multijoueur
-#### Cible
+#### 2.3.1.3. Cible
 ---
 Comme dit précédemment, mon jeu n'est pas conçu dans un cadre de vente ou de mise en production à grande échelle. La cible principale est donc moi-même, les cibles secondaires sont les personnes de l'entourage proche qui feront office de testeurs.
 
-## Difficultés rencontrées
+## 2.4. Difficultés rencontrées
 ---
 Lors de ce projet, il m'est arrivé bien des fois d'arriver à cours d'inspiration, d'idées ou juste de me retrouver bloqué par mon manque de connaissances dans le game dev.
 - Création d'assets : sans expérience dans le domaine, il m'est arrivé de ne pas être satisfait du rendu de ce que je produisais
