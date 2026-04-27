@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://dqa01xdajdmpt" path="res://scenes/platform.tscn" id="21_37s47"]
 [ext_resource type="PackedScene" uid="uid://4y0iag1d8ktc" path="res://scenes/coin.tscn" id="22_bt5mj"]
 [ext_resource type="PackedScene" uid="uid://dtqa006lpuovu" path="res://scenes/button_activate.tscn" id="25_pl11u"]
+[ext_resource type="Script" uid="uid://dl7fq81sywet2" path="res://scripts/stoppedSlime.gd" id="26_bhx41"]
 
 [sub_resource type="GDScript" id="GDScript_0tnpc"]
 script/source = "extends Node2D
@@ -10116,6 +10117,6 @@ position = Vector2(949, 101)
 
 [node name="Slime" parent="." unique_id=1829412871 instance=ExtResource("11_dinhu")]
 position = Vector2(998, 47)
-script = null
+script = ExtResource("26_bhx41")
 
 [connection signal="timeout" from="GameManager/Timer" to="GameManager" method="_on_timer_timeout"]

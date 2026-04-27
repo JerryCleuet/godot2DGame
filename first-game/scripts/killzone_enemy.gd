@@ -1,6 +1,7 @@
 extends Area2D
 @onready var death: AudioStreamPlayer2D = $SFX/Death
 @onready var timer: Timer = $Timer
+@onready var slime: Node2D = $".."
 
 func _on_body_entered(body: Node2D) -> void:
 	if not body.hasASword:
@@ -12,6 +13,7 @@ func _on_body_entered(body: Node2D) -> void:
 		death.play() #Sound
 		Engine.time_scale = 0.5
 	else:
+		slime.dead = true
 		get_parent().queue_free()
 
 func _on_timer_timeout() -> void:
