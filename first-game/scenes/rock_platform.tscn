@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bfw2733hkpofw"]
+
+[ext_resource type="Texture2D" uid="uid://un1kmh0dbmi4" path="res://assets/sprites/BasePack/platforms.png" id="1_l8kf2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_455ss"]
+size = Vector2(32, 10)
+
+[node name="RockPlatform" type="AnimatableBody2D" unique_id=15915738]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=795034945]
+position = Vector2(4, -2)
+texture = ExtResource("1_l8kf2")
+region_enabled = true
+region_rect = Rect2(16, 16, 32, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=49938251]
+position = Vector2(4, -2)
+shape = SubResource("RectangleShape2D_455ss")
+one_way_collision = true

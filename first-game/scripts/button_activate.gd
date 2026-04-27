@@ -1,0 +1,9 @@
+extends Area2D
+
+
+func _on_body_entered(body: Node2D) -> void:
+	print(body)
+	if body is CharacterBody2D:
+		body.hasASword = true
+		print("Epée obtenue !")
+		queue_free()

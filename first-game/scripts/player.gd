@@ -7,6 +7,7 @@ const SPEED = 130.0
 const JUMP_VELOCITY = -300.0
 var is_hurt = false
 var is_dead = false
+var hasASword = false
 
 # Si le joueur prend un dégât
 func _hurted():
@@ -43,19 +44,25 @@ func _physics_process(delta: float) -> void:
 		
 	if (is_hurt == true):
 		animated_sprite.play("damage")
-		
+	
 	if(is_hurt == false):
 		# Play animations
 		if is_on_floor():
+			if hasASword:
+				if (direction == 0):
+					animated_sprite.play("idle_with_sword")
+				# Si en train de courir
+				else:
+					animated_sprite.play("run_with_sword")
 			# Si statique
-			if (direction == 0):
-				animated_sprite.play("idle")
-			# Si en train de courir
 			else:
-				animated_sprite.play("run")
+				if (direction == 0):
+					animated_sprite.play("idle")
+				# Si en train de courir
+				else:
+					animated_sprite.play("run")
 		# Si en train de sauter
 		else:
 			animated_sprite.play("jump")
-		
 
 		move_and_slide()

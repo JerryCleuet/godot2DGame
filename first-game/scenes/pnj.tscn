@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ctpntfq3j7bb1"]
+
+[ext_resource type="Texture2D" uid="uid://declqwmiprqnw" path="res://assets/sprites/pnj.png" id="1_xg58l"]
+[ext_resource type="Texture2D" uid="uid://n7e0863wdbv7" path="res://assets/sprites/pnja.png" id="2_3is8m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1ya0"]
+atlas = ExtResource("1_xg58l")
+region = Rect2(27, 19, 19, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3d7l"]
+atlas = ExtResource("2_3is8m")
+region = Rect2(27, 18, 19, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v1ya0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1ya0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r3d7l")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="pnj" type="Node2D" unique_id=1526235963]
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=2042242650]
+sprite_frames = SubResource("SpriteFrames_v1ya0")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.72268474
+flip_h = true

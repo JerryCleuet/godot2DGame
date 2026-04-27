@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cliopbcgorq1h"
-path="res://.godot/imported/slime_green.png-f6349164bf3a0f5189bb927b97af9c58.ctex"
+uid="uid://kmq7gi76b2k3"
+path="res://.godot/imported/KnightSword.png-eafb593db3a1b9ba0dffcd367fb3b76d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/slime_green.png"
-dest_files=["res://.godot/imported/slime_green.png-f6349164bf3a0f5189bb927b97af9c58.ctex"]
+source_file="res://assets/sprites/KnightSword.png"
+dest_files=["res://.godot/imported/KnightSword.png-eafb593db3a1b9ba0dffcd367fb3b76d.ctex"]
 
 [params]
 

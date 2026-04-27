@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6ffr11p8n2k"
-path="res://.godot/imported/fruit.png-3735163b668af10c2b35b52cba81b68a.ctex"
+uid="uid://dutdj3dbw6m4a"
+path="res://.godot/imported/NPC_Villager.png-c6dc7267f2a27bf53e93dd50df134634.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/fruit.png"
-dest_files=["res://.godot/imported/fruit.png-3735163b668af10c2b35b52cba81b68a.ctex"]
+source_file="res://assets/sprites/JapaneseNPC/NPC_Villager.png"
+dest_files=["res://.godot/imported/NPC_Villager.png-c6dc7267f2a27bf53e93dd50df134634.ctex"]
 
 [params]
 
