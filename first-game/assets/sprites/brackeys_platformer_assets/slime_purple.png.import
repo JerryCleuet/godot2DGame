@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2tq0o7wet46g"
-path="res://.godot/imported/Mountain_Front.png-5908357c8accca76aaa84d4412a9af0f.ctex"
+uid="uid://c5n1pk0m6e12y"
+path="res://.godot/imported/slime_purple.png-c5412bc4b834695d3bdece3a6f3bd054.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Japan/Mountain_Front.png"
-dest_files=["res://.godot/imported/Mountain_Front.png-5908357c8accca76aaa84d4412a9af0f.ctex"]
+source_file="res://assets/sprites/brackeys_platformer_assets/slime_purple.png"
+dest_files=["res://.godot/imported/slime_purple.png-c5412bc4b834695d3bdece3a6f3bd054.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxn160omg3go"
-path="res://.godot/imported/BackgroundTrees.png-ff09c7aed5cffd69370555a86be59401.ctex"
+uid="uid://cliopbcgorq1h"
+path="res://.godot/imported/slime_green.png-11330940ea3b8379266b8f381014516a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Japan/BackgroundTrees.png"
-dest_files=["res://.godot/imported/BackgroundTrees.png-ff09c7aed5cffd69370555a86be59401.ctex"]
+source_file="res://assets/sprites/brackeys_platformer_assets/slime_green.png"
+dest_files=["res://.godot/imported/slime_green.png-11330940ea3b8379266b8f381014516a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dutdj3dbw6m4a"
-path="res://.godot/imported/NPC_Villager.png-c6dc7267f2a27bf53e93dd50df134634.ctex"
+uid="uid://cu0kbp5sl3b0i"
+path="res://.godot/imported/coin.png-8e63bb8a1dbd5997e82fb5828a8b35d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/JapaneseNPC/NPC_Villager.png"
-dest_files=["res://.godot/imported/NPC_Villager.png-c6dc7267f2a27bf53e93dd50df134634.ctex"]
+source_file="res://assets/sprites/brackeys_platformer_assets/coin.png"
+dest_files=["res://.godot/imported/coin.png-8e63bb8a1dbd5997e82fb5828a8b35d5.ctex"]
 
 [params]
 

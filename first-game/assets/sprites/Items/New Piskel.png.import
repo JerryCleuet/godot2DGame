@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cu0kbp5sl3b0i"
-path="res://.godot/imported/coin.png-9cd56dfe3dc16fadd9802e8fe353ad26.ctex"
+uid="uid://diflrnfn3fcoh"
+path="res://.godot/imported/New Piskel.png-9b8e0979b907ec2029b2194b8546e8d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/BasePack/coin.png"
-dest_files=["res://.godot/imported/coin.png-9cd56dfe3dc16fadd9802e8fe353ad26.ctex"]
+source_file="res://assets/sprites/Items/New Piskel.png"
+dest_files=["res://.godot/imported/New Piskel.png-9b8e0979b907ec2029b2194b8546e8d0.ctex"]
 
 [params]
 

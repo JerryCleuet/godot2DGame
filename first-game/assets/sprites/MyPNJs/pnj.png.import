@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmvjcof2kd1oy"
-path="res://.godot/imported/Trees.png-7c94f87d39ae44d1aafdfa9d35692dc1.ctex"
+uid="uid://declqwmiprqnw"
+path="res://.godot/imported/pnj.png-81701e85effca788de39757d85b10a4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Japan/Trees.png"
-dest_files=["res://.godot/imported/Trees.png-7c94f87d39ae44d1aafdfa9d35692dc1.ctex"]
+source_file="res://assets/sprites/MyPNJs/pnj.png"
+dest_files=["res://.godot/imported/pnj.png-81701e85effca788de39757d85b10a4c.ctex"]
 
 [params]
 

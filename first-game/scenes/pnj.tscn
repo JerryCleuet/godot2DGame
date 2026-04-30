@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://ctpntfq3j7bb1"]
 
-[ext_resource type="Texture2D" uid="uid://declqwmiprqnw" path="res://assets/sprites/pnj.png" id="1_xg58l"]
-[ext_resource type="Texture2D" uid="uid://n7e0863wdbv7" path="res://assets/sprites/pnja.png" id="2_3is8m"]
+[ext_resource type="Script" uid="uid://bp5ucwwnwnp02" path="res://scripts/pnj.gd" id="1_3is8m"]
+[ext_resource type="Texture2D" uid="uid://declqwmiprqnw" path="res://assets/sprites/MyPNJs/pnj.png" id="1_xg58l"]
+[ext_resource type="Texture2D" uid="uid://n7e0863wdbv7" path="res://assets/sprites/MyPNJs/pnja.png" id="2_3is8m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v1ya0"]
 atlas = ExtResource("1_xg58l")
@@ -25,7 +26,11 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xg58l"]
+size = Vector2(95, 35)
+
 [node name="pnj" type="Node2D" unique_id=1526235963]
+script = ExtResource("1_3is8m")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=2042242650]
 sprite_frames = SubResource("SpriteFrames_v1ya0")
@@ -33,3 +38,13 @@ animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.72268474
 flip_h = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1112198166]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=365807206]
+position = Vector2(-0.5, -8.5)
+shape = SubResource("RectangleShape2D_xg58l")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

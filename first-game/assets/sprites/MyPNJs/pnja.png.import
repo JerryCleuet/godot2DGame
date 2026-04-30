@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnxdft7bektvw"
-path="res://.godot/imported/House.png-40889094053e7804656d239856279421.ctex"
+uid="uid://n7e0863wdbv7"
+path="res://.godot/imported/pnja.png-df7327906c1819d59a8bf7add6920dd3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Japan/House.png"
-dest_files=["res://.godot/imported/House.png-40889094053e7804656d239856279421.ctex"]
+source_file="res://assets/sprites/MyPNJs/pnja.png"
+dest_files=["res://.godot/imported/pnja.png-df7327906c1819d59a8bf7add6920dd3.ctex"]
 
 [params]
 

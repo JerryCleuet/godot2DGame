@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://60srmp8f1guv"]
 
 [ext_resource type="Script" uid="uid://0k25jjpsoipc" path="res://scripts/slime.gd" id="1_n6pvg"]
-[ext_resource type="Texture2D" uid="uid://cliopbcgorq1h" path="res://assets/sprites/BasePack/slime_green.png" id="1_p2gj0"]
+[ext_resource type="Texture2D" uid="uid://cliopbcgorq1h" path="res://assets/sprites/brackeys_platformer_assets/slime_green.png" id="1_p2gj0"]
 [ext_resource type="PackedScene" uid="uid://bnb1o70nep5nj" path="res://scenes/killzone_enemy.tscn" id="3_n6pvg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gstla"]
@@ -95,11 +95,11 @@ frame_progress = 1.0
 flip_h = true
 
 [node name="RayCastLeft" type="RayCast2D" parent="." unique_id=305141433]
-position = Vector2(0, 6)
+position = Vector2(0, 9)
 target_position = Vector2(-7, 0)
 
 [node name="RayCastRight" type="RayCast2D" parent="." unique_id=1367165590]
-position = Vector2(0, 6)
+position = Vector2(0, 9)
 target_position = Vector2(7, 0)
 
 [node name="KillzoneEnemy" parent="." unique_id=1928297006 instance=ExtResource("3_n6pvg")]

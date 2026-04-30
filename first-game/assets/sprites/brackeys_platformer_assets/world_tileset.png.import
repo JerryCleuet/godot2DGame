@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bco6icadpsq43"
-path="res://.godot/imported/Sky.png-08b3a43d2ed774b403316feefee6b4b4.ctex"
+uid="uid://dtdncmd6dus80"
+path="res://.godot/imported/world_tileset.png-270970e46f43dd2746698d059637c0fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Japan/Sky.png"
-dest_files=["res://.godot/imported/Sky.png-08b3a43d2ed774b403316feefee6b4b4.ctex"]
+source_file="res://assets/sprites/brackeys_platformer_assets/world_tileset.png"
+dest_files=["res://.godot/imported/world_tileset.png-270970e46f43dd2746698d059637c0fb.ctex"]
 
 [params]
 
