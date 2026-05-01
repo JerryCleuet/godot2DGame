@@ -1,24 +1,45 @@
 extends Node2D
 
 const SPEED = 40
-var direction = 1
-var dead = false
-@onready var ray_cast_right: RayCast2D = $RayCastRight
-@onready var ray_cast_left: RayCast2D = $RayCastLeft
+
+var direction := 1
+var dead := false
+
+@onready var ray_right: RayCast2D = $RayCastRight
+@onready var ray_left: RayCast2D = $RayCastLeft
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta: float) -> void:
-	# Gérer les collisions contre les murs
-	if ray_cast_right.is_colliding():
+
+func _physics_process(delta):
+	if dead:
+		return
+
+	if ray_right.is_colliding():
 		direction = -1
 		animated_sprite.flip_h = true
-	elif ray_cast_left.is_colliding():
+	elif ray_left.is_colliding():
 		direction = 1
 		animated_sprite.flip_h = false
 
 	position.x += direction * SPEED * delta
-	
-	if(dead == true):
-		animated_sprite.play("death")
-		dead = false
+
+	animated_sprite.play("walk")
+
+
+func _on_body_entered(body):
+	if dead:
+		return
+
+	if body.name == "Player":
+		body.on_slime_hit(self)
+
+
+func die():
+	if dead:
+		return
+
+	dead = true
+	animated_sprite.play("death")
+
+	await animated_sprite.animation_finished
+	queue_free()

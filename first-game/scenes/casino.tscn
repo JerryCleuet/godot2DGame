@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dtoyrrbs760ab"]
+
+[ext_resource type="Script" uid="uid://cax4ggmbyw47j" path="res://scripts/casino.gd" id="1_6hi0d"]
+[ext_resource type="Texture2D" uid="uid://k216neh8m44r" path="res://assets/sprites/Items/casinoBlock.png" id="2_ftwen"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nhxoo"]
+size = Vector2(16, 16)
+
+[node name="Casino" type="Area2D" unique_id=692688858]
+script = ExtResource("1_6hi0d")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2069449472]
+texture = ExtResource("2_ftwen")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=852581847]
+shape = SubResource("RectangleShape2D_nhxoo")

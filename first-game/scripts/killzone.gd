@@ -6,7 +6,7 @@ func _on_body_entered(body: Node2D) -> void:
 	#body._hurted()
 	print("game over")
 	body.get_node("CollisionShape2D").queue_free()
-	body.is_dead = true
+	body.state = 4
 	timer.start()
 	death.play() #Sound
 	Engine.time_scale = 0.5

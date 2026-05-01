@@ -4,16 +4,13 @@ extends Node
 @onready var player: CharacterBody2D = $"../Player"
 @onready var timer: Timer = $Timer
 
-var score = 0
+var score = 50
 
-
-func add_point():
+func add_coin(amount := 1):
+	SaveManager.coins += amount
 	score_label.visible = true
-	score += 1
-	print(score)
-	score_label.text = "Points : " + str(score)
+	score_label.text = "Pièces: " + str(SaveManager.coins)
 	timer.start()
-
 
 func _on_timer_timeout() -> void:
 	score_label.hide()
