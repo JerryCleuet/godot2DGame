@@ -4,7 +4,7 @@ extends Node
 @onready var player: CharacterBody2D = $"../Player"
 @onready var timer: Timer = $Timer
 
-var score = 50
+var score = 0
 
 func add_coin(amount := 1):
 	SaveManager.coins += amount

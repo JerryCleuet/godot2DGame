@@ -78,13 +78,13 @@ func start_dialogue():
 
 # --- Achat ---
 func try_buy_powerup():
-	if game_manager.score < 50:
+	if SaveManager.coins < 50:
 		powerup_label.text = "Pas assez de pièces..."
 		return
 
 	# transaction
-	game_manager.score -= 50
-	game_manager.score_label.text = "Points : " + str(game_manager.score)
+	SaveManager.coins -= 50
+	game_manager.score_label.text = "Points : " + str(SaveManager.coins)
 
 	# effet joueur
 	print(player_ref)
