@@ -36,7 +36,7 @@ func play_casino():
 
 	if chance <= 0.15:
 		SaveManager.coins *= 2
-		show_result("GAGNÉ !(" + str(chance) + "/0.2)")
+		show_result("GAGNÉ !(" + str(chance) + "/0.15)")
 	else:
 		show_result("Perdu... (" + str(chance) + "/0.2)")
 
