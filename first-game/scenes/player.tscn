@@ -1,19 +1,31 @@
 [gd_scene format=3 uid="uid://b3hjlgmu1lcvb"]
 
 [ext_resource type="Script" uid="uid://bhqlgaeisqull" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://d2qdsvyxa1aya" path="res://assets/sprites/Animations/KnightMurasaki.png" id="2_fjrip"]
+[ext_resource type="Texture2D" uid="uid://bk08v435pfxek" path="res://assets/sprites/animations/KnightMurasaki.png" id="2_fjrip"]
 [ext_resource type="Texture2D" uid="uid://cfsd4p82x83g" path="res://assets/sprites/brackeys_platformer_assets/knight.png" id="2_qhqgy"]
-[ext_resource type="Texture2D" uid="uid://c2u8el5ubvlp8" path="res://assets/sprites/Animations/KnightPowerUp.png" id="2_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://crklgubuyyhog" path="res://assets/sprites/animations/KnightPowerUp.png" id="2_tuyoq"]
 [ext_resource type="AudioStream" uid="uid://djyjise4qu42w" path="res://assets/sounds/jump.wav" id="3_qhqgy"]
-[ext_resource type="Texture2D" uid="uid://kmq7gi76b2k3" path="res://assets/sprites/Animations/KnightSword.png" id="3_qlg0r"]
-[ext_resource type="Texture2D" uid="uid://cip80kwe2i4fb" path="res://assets/sprites/Animations/Murasaki2.png" id="3_smehm"]
+[ext_resource type="Texture2D" uid="uid://buri026bmnmf6" path="res://assets/sprites/animations/KnightSword.png" id="3_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://isffus6y51xl" path="res://assets/sprites/animations/Murasaki2.png" id="3_smehm"]
 [ext_resource type="AudioStream" uid="uid://bi3aihh6egamy" path="res://assets/sounds/hurt.wav" id="4_dqkch"]
-[ext_resource type="Texture2D" uid="uid://cvf3ymhgyhowa" path="res://assets/sprites/Animations/MurasakiVariations.png" id="4_ur7pv"]
-[ext_resource type="Texture2D" uid="uid://cem6w1h22dnaj" path="res://assets/sprites/Animations/MurasakiExplode.png" id="5_y4r1p"]
+[ext_resource type="Texture2D" uid="uid://c1iy0g3vub4mn" path="res://assets/sprites/animations/MurasakiVariations.png" id="4_ur7pv"]
+[ext_resource type="Texture2D" uid="uid://c22tg1ewgxqle" path="res://assets/sprites/animations/MurasakiExplode.png" id="5_y4r1p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2dvfe"]
-atlas = ExtResource("2_fjrip")
-region = Rect2(183, 146, 30, 30)
+atlas = ExtResource("3_smehm")
+region = Rect2(17, 5, 30, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nubpm"]
+atlas = ExtResource("3_smehm")
+region = Rect2(10, 42, 50, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ua5cf"]
+atlas = ExtResource("3_smehm")
+region = Rect2(20, 78, 30, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51ujp"]
+atlas = ExtResource("3_smehm")
+region = Rect2(20, 119, 20, 30)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_giy8y"]
 atlas = ExtResource("2_fjrip")
@@ -257,7 +269,49 @@ animations = [{
 "texture": SubResource("AtlasTexture_2dvfe")
 }, {
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_2dvfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dvfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dvfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dvfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nubpm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nubpm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nubpm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nubpm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nubpm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua5cf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua5cf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua5cf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_51ujp")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_giy8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fdfoy")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fdfoy")
@@ -300,6 +354,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_h7ic4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_au7lq")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_au7lq")
@@ -544,10 +601,10 @@ script = ExtResource("1_g2els")
 z_index = 5
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_tuyoq")
-animation = &"Murasaki"
+animation = &"idle"
 autoplay = "idle"
-frame = 17
-frame_progress = 1.0
+frame = 3
+frame_progress = 0.18805304
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1508451568]
 position = Vector2(0, -5)

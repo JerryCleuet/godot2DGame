@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cip80kwe2i4fb"
-path="res://.godot/imported/Murasaki2.png-51228e643b9887f5ad14718a6d91b79e.ctex"
+uid="uid://isffus6y51xl"
+path="res://.godot/imported/Murasaki2.png-9be1036d979679a26f9e4f1e820bc402.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Animations/Murasaki2.png"
-dest_files=["res://.godot/imported/Murasaki2.png-51228e643b9887f5ad14718a6d91b79e.ctex"]
+source_file="res://assets/sprites/animations/Murasaki2.png"
+dest_files=["res://.godot/imported/Murasaki2.png-9be1036d979679a26f9e4f1e820bc402.ctex"]
 
 [params]
 

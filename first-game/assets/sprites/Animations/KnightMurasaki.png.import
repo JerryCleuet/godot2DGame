@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2qdsvyxa1aya"
-path="res://.godot/imported/KnightMurasaki.png-f3862b05b7461dc0ac1224ba0257946d.ctex"
+uid="uid://bk08v435pfxek"
+path="res://.godot/imported/KnightMurasaki.png-7ccbc22006e7d7cdd0508474b6df31a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Animations/KnightMurasaki.png"
-dest_files=["res://.godot/imported/KnightMurasaki.png-f3862b05b7461dc0ac1224ba0257946d.ctex"]
+source_file="res://assets/sprites/animations/KnightMurasaki.png"
+dest_files=["res://.godot/imported/KnightMurasaki.png-7ccbc22006e7d7cdd0508474b6df31a4.ctex"]
 
 [params]
 

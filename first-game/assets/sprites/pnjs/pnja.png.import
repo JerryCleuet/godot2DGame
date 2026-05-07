@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crklgubuyyhog"
-path="res://.godot/imported/KnightPowerUp.png-c93b099552ce87901883084eeccd5593.ctex"
+uid="uid://n7e0863wdbv7"
+path="res://.godot/imported/pnja.png-14a26fec19896a7a7cf664ddf58e01be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/animations/KnightPowerUp.png"
-dest_files=["res://.godot/imported/KnightPowerUp.png-c93b099552ce87901883084eeccd5593.ctex"]
+source_file="res://assets/sprites/pnjs/pnja.png"
+dest_files=["res://.godot/imported/pnja.png-14a26fec19896a7a7cf664ddf58e01be.ctex"]
 
 [params]
 

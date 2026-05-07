@@ -24,6 +24,10 @@ buses/default_bus_layout="uid://dhgcsx13geh8s"
 Music="*uid://d2p5iwthtitxx"
 SaveManager="*uid://dgykeuw7yu5wp"
 
+[global_group]
+
+Player=""
+
 [input]
 
 ui_left={
@@ -89,3 +93,5 @@ Murasaki={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
+textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true

@@ -5,7 +5,8 @@ extends Node
 @onready var timer: Timer = $Timer
 
 var score = 0
-
+func _process(delta: float) -> void:
+	score_label.global_position = player.global_position + Vector2(-30, -50)
 func add_coin(amount := 1):
 	SaveManager.coins += amount
 	score_label.visible = true

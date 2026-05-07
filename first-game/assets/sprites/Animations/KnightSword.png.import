@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kmq7gi76b2k3"
-path="res://.godot/imported/KnightSword.png-3d32f2e2a6a7751024f42aec25213092.ctex"
+uid="uid://buri026bmnmf6"
+path="res://.godot/imported/KnightSword.png-4b9235e02a4f0c52ac7d9137b468d409.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Animations/KnightSword.png"
-dest_files=["res://.godot/imported/KnightSword.png-3d32f2e2a6a7751024f42aec25213092.ctex"]
+source_file="res://assets/sprites/animations/KnightSword.png"
+dest_files=["res://.godot/imported/KnightSword.png-4b9235e02a4f0c52ac7d9137b468d409.ctex"]
 
 [params]
 

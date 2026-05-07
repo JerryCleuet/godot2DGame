@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crklgubuyyhog"
-path="res://.godot/imported/KnightPowerUp.png-c93b099552ce87901883084eeccd5593.ctex"
+uid="uid://brocp0m44x8ai"
+path="res://.godot/imported/mini_tilemap.png-48a275779e456f838c940d1d3ead3a7c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/animations/KnightPowerUp.png"
-dest_files=["res://.godot/imported/KnightPowerUp.png-c93b099552ce87901883084eeccd5593.ctex"]
+source_file="res://assets/mini_tilemap.png"
+dest_files=["res://.godot/imported/mini_tilemap.png-48a275779e456f838c940d1d3ead3a7c.ctex"]
 
 [params]
 

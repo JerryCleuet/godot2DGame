@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var jump: AudioStreamPlayer2D = $Jump
+@onready var score_label: Label = %ScoreLabel
 
 var SPEED := 130.0
 var JUMP_VELOCITY := -300.0
@@ -14,7 +15,10 @@ var state := State.NORMAL
 
 
 func _ready():
-	position = SaveManager.spawn_position
+	if SaveManager.spawn_position:
+		position = SaveManager.spawn_position
+	else:
+		return
 	hasASword = SaveManager.hasASword
 	power_up = SaveManager.power_up
 # -------------------------
@@ -27,8 +31,8 @@ func _physics_process(delta: float) -> void:
 		return
 	# buffs
 	if power_up:
-		SPEED = 400
-		JUMP_VELOCITY = -700
+		SPEED = 500
+		JUMP_VELOCITY = -400
 
 	var direction := Input.get_axis("ui_left", "ui_right")
 
@@ -191,7 +195,10 @@ func _trigger_murasaki():
 
 	velocity = Vector2.ZERO
 	animated_sprite.play("Murasaki")
+	score_label.visible = true
+	score_label.text = "Murasaki !"
 
 	await animated_sprite.animation_finished
 
+	score_label.visible = false
 	state = State.NORMAL

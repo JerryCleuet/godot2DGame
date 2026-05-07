@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ddyhk8bmpuf04"]
+
+[ext_resource type="Texture2D" uid="uid://dqx1aba7b0f4p" path="res://assets/sprites/houses/houseExample.png" id="1_d7po0"]
+[ext_resource type="Script" uid="uid://d2kfxeids1rak" path="res://scripts/house.gd" id="1_rk7hg"]
+[ext_resource type="FontFile" uid="uid://cuhjqidghnmi2" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_qtlar"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7po0"]
+size = Vector2(54, 33.5)
+
+[node name="house" type="Area2D" unique_id=1018959807]
+collision_mask = 2
+script = ExtResource("1_rk7hg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2021149816]
+texture = ExtResource("1_d7po0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2002649739]
+position = Vector2(-1, 54.25)
+shape = SubResource("RectangleShape2D_d7po0")
+
+[node name="EnterLabel" type="Label" parent="." unique_id=1799046712]
+offset_left = -39.0
+offset_top = 26.0
+offset_right = 36.0
+offset_bottom = 49.0
+theme_override_fonts/font = ExtResource("2_qtlar")
+theme_override_font_sizes/font_size = 8
+text = "Entrer (e)"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
