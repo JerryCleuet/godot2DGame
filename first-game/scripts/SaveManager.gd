@@ -2,6 +2,7 @@ extends Node
 
 var spawn_position
 var position
+var insidePosition
 var coins := 0
 var hasASword := false
 var power_up := false

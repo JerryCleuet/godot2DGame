@@ -365,7 +365,7 @@ libraries/ = SubResource("AnimationLibrary_p57ef")
 autoplay = &"move_platform"
 
 [node name="Killzone" parent="." unique_id=1928297006 instance=ExtResource("5_iywne")]
-position = Vector2(282, 103)
+position = Vector2(1015, 91)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=258442945]
 position = Vector2(-159, 5)

@@ -25,5 +25,6 @@ func _process(delta):
 		change_scene()
 
 func change_scene():
+	SaveManager.insidePosition = player.global_position
 	SaveManager.spawn_position = SaveManager.position
 	get_tree().change_scene_to_file("res://scenes/game.tscn")

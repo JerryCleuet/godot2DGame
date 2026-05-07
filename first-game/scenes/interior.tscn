@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://txk3aaf2o07b" path="res://assets/HouseInteriorTest.png" id="1_pylra"]
 [ext_resource type="PackedScene" uid="uid://b3hjlgmu1lcvb" path="res://scenes/player.tscn" id="2_3tnok"]
 [ext_resource type="FontFile" uid="uid://jgv88f60q8tg" path="res://assets/fonts/PixelOperator8.ttf" id="3_scr8i"]
+[ext_resource type="PackedScene" uid="uid://btvetxn3a0nfn" path="res://scenes/killzone.tscn" id="5_bxric"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4aljj"]
 texture = ExtResource("1_pylra")
@@ -116,6 +117,9 @@ sources/0 = SubResource("TileSetAtlasSource_4aljj")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4aljj"]
 size = Vector2(9.5, 26.5)
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_selxf"]
+distance = -1.0
+
 [node name="interior" type="Area2D" unique_id=1730811331]
 collision_mask = 2
 script = ExtResource("1_4aljj")
@@ -150,6 +154,13 @@ text = "(e)"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1621909783]
 position = Vector2(5, -13.75)
 shape = SubResource("RectangleShape2D_4aljj")
+
+[node name="Killzone" parent="." unique_id=1928297006 instance=ExtResource("5_bxric")]
+position = Vector2(320, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1831806642]
+position = Vector2(-159, 5)
+shape = SubResource("WorldBoundaryShape2D_selxf")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
