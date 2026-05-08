@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b3hjlgmu1lcvb" path="res://scenes/player.tscn" id="2_3tnok"]
 [ext_resource type="FontFile" uid="uid://jgv88f60q8tg" path="res://assets/fonts/PixelOperator8.ttf" id="3_scr8i"]
 [ext_resource type="PackedScene" uid="uid://btvetxn3a0nfn" path="res://scenes/killzone.tscn" id="5_bxric"]
+[ext_resource type="PackedScene" uid="uid://c8ymq12itd0xc" path="res://scenes/sword.tscn" id="6_selxf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4aljj"]
 texture = ExtResource("1_pylra")
@@ -161,6 +162,9 @@ position = Vector2(320, 3)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1831806642]
 position = Vector2(-159, 5)
 shape = SubResource("WorldBoundaryShape2D_selxf")
+
+[node name="Sword" parent="." unique_id=2144575131 instance=ExtResource("6_selxf")]
+position = Vector2(92, -96)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

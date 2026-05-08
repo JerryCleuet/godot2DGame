@@ -1,5 +1,6 @@
 extends Node2D
 @onready var exit_label: Label = $ExitLabel
+@onready var realPlayer: CharacterBody2D = %Player
 
 var player_in_range := false
 var player :CharacterBody2D = null
@@ -26,5 +27,6 @@ func _process(delta):
 
 func change_scene():
 	SaveManager.insidePosition = player.global_position
+	SaveManager.hasASword = player.hasASword
 	SaveManager.spawn_position = SaveManager.position
 	get_tree().change_scene_to_file("res://scenes/game.tscn")

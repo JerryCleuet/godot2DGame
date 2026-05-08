@@ -1,8 +1,8 @@
 extends Node2D
 
 @onready var game_manager: Node = %GameManager
-@onready var powerup_label: Label = $"../../Labels/PowerupLabel"
-@onready var power_up_info: Label = $"../../Labels/PowerUpInfo"
+@onready var powerup_label: Label = $PowerupLabel
+@onready var power_up_info: Label = $PowerUpInfo
 
 var player_in_range = false
 var dialogue_index = 0
